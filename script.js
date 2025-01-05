@@ -60,7 +60,7 @@ function init() {
     // Material array for the box's 6 faces
     const materials = [
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Left side
-        new THREE.MeshBasicMaterial({ color: "hsl(0, 69%, 63%)"}), // Right side
+        new THREE.MeshBasicMaterial({ color: "hsl(0, 76%, 71%)"}), // Right side
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Top
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Bottom
         new THREE.MeshBasicMaterial({ map: coverTexture }), // Front
