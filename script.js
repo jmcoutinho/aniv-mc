@@ -15,7 +15,7 @@ animate();
 function init() {
     // Scene
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x272727); // same as body background to blend nicely
+    scene.background = new THREE.Color(0xf0f0f0);
 
     // Camera
     camera = new THREE.PerspectiveCamera(

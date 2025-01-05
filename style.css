@@ -47,7 +47,7 @@ html, body {
     border-bottom: 1px solid #ddd; /* Subtle divider */
     padding: 0 10px;
     height: 40px;
-    justify-content: center;
+    justify-content: space-between;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
@@ -59,11 +59,16 @@ html, body {
     display: flex;
     gap: 8px;
     margin-right: 12px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #alertTitleBar span {
     font-size: 1.2rem;
     color: #333;
+    margin: 0 auto;
 }
 
 .macos-control {
