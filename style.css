@@ -1,0 +1,94 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page layout */
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0; /* Light gray typical for macOS */
+    font-family: "-apple-system", BlinkMacSystemFont, sans-serif;
+    overflow: hidden; /* Hides scrollbars if any */
+}
+
+/* Scene container takes full window for the 3D canvas */
+#sceneContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* macOS Styled Window */
+#windowsXpAlert {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45rem;
+    border: 1px solid #ccc; /* Subtle border */
+    background-color: #ffffff; /* Modern macOS white background */
+    font-size: 2rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Softer shadow */
+    z-index: 10 !important;
+    overflow: hidden; /* Ensures no overflow from rounded corners */
+}
+
+/* Title bar */
+#alertTitleBar {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8; /* Light gray title bar */
+    border-bottom: 1px solid #ddd; /* Subtle divider */
+    padding: 0 10px;
+    height: 40px;
+    justify-content: flex-start;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+/* macOS Control Buttons */
+#alertTitleBar::before {
+    content: '';
+    display: flex;
+    gap: 8px;
+    margin-right: 12px;
+}
+
+#alertTitleBar span {
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.macos-control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.macos-control.red {
+    background: #ff5f57;
+}
+
+.macos-control.yellow {
+    background: #ffbd2e;
+}
+
+.macos-control.green {
+    background: #28c840;
+}
+
+#alertBody {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}

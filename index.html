@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mais um livro que não chegou a tempo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap"> 
+    { 
+      "imports": { 
+        "three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js", 
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/" 
+      } 
+    }
+  </script>
+</head>
+<body>
+  <!-- Windows XP Style Alert -->
+  <div id="windowsXpAlert">
+    <div id="alertTitleBar">
+      <span>Parabéns, mas</span>
+      <button id="alertClose">X</button>
+    </div>
+    <div id="alertBody">
+      <p>O teu presente encontra-se: a caminho.<br>Atrasou mas há de chegar ⁀⊙෴☉⁀.</p>
+    </div>
+  </div>
+
+  <!-- 3D Scene Container -->
+  <div id="sceneContainer"></div>
+
+  <!-- Three.js (CDN) -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
