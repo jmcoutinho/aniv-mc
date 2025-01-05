@@ -15,7 +15,7 @@ animate();
 function init() {
     // Scene
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xf0f0f0);
+    scene.background = new THREE.Color(0x2c2c2c);
 
     // Camera
     camera = new THREE.PerspectiveCamera(
@@ -60,7 +60,7 @@ function init() {
     // Material array for the box's 6 faces
     const materials = [
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Left side
-        new THREE.MeshBasicMaterial({ color: "hsl(0, 65%, 57%)"}), // Right side
+        new THREE.MeshBasicMaterial({ color: "hsl(0, 69%, 63%)"}), // Right side
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Top
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Bottom
         new THREE.MeshBasicMaterial({ map: coverTexture }), // Front
