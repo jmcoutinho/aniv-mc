@@ -15,7 +15,7 @@ animate();
 function init() {
     // Scene
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x9bb7df); // same as body background to blend nicely
+    scene.background = new THREE.Color(0x272727); // same as body background to blend nicely
 
     // Camera
     camera = new THREE.PerspectiveCamera(
@@ -60,11 +60,11 @@ function init() {
     // Material array for the box's 6 faces
     const materials = [
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Left side
-        new THREE.MeshBasicMaterial({ color: "hsl(190, 100%, 34%)"}), // Right side
+        new THREE.MeshBasicMaterial({ color: "hsl(0, 0%, 20%)"}), // Right side
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Top
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Bottom
         new THREE.MeshBasicMaterial({ map: coverTexture }), // Front
-        new THREE.MeshBasicMaterial({ color: "hsl(190, 100%, 37%)" })  // Back
+        new THREE.MeshBasicMaterial({ color: "hsl(0, 0%, 20%)"})  // Back
     ];
 
     bookMesh = new THREE.Mesh(geometry, materials);
