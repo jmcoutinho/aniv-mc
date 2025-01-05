@@ -60,11 +60,11 @@ function init() {
     // Material array for the box's 6 faces
     const materials = [
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Left side
-        new THREE.MeshBasicMaterial({ color: 0xaf1e20}), // Right side
+        new THREE.MeshBasicMaterial({ color: 0xda3d3f}), // Back
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Top
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Bottom
         new THREE.MeshBasicMaterial({ map: coverTexture }), // Front
-        new THREE.MeshBasicMaterial({ color: 0xda3d3f})  // Back
+        new THREE.MeshBasicMaterial({ color: 0xaf1e20})  // Right Side
     ];
 
     bookMesh = new THREE.Mesh(geometry, materials);
