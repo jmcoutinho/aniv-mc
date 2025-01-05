@@ -64,7 +64,7 @@ function init() {
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Top
         new THREE.MeshBasicMaterial({ color: 0xdddddd }), // Bottom
         new THREE.MeshBasicMaterial({ map: coverTexture }), // Front
-        new THREE.MeshBasicMaterial({ color: "hsl(0, 86%, 64%)"})  // Back
+        new THREE.MeshBasicMaterial({ color: 0xda3d3f})  // Back
     ];
 
     bookMesh = new THREE.Mesh(geometry, materials);
